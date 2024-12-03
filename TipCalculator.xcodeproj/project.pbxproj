@@ -8,21 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		E479F0992CFED63F00B88D0D /* TipCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0982CFED63F00B88D0D /* TipCalculatorApp.swift */; };
-		E479F09B2CFED63F00B88D0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F09A2CFED63F00B88D0D /* ContentView.swift */; };
+		E479F09B2CFED63F00B88D0D /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F09A2CFED63F00B88D0D /* TipCalculatorView.swift */; };
 		E479F09D2CFED64000B88D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E479F09C2CFED64000B88D0D /* Assets.xcassets */; };
 		E479F0A02CFED64000B88D0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E479F09F2CFED64000B88D0D /* Preview Assets.xcassets */; };
+		E479F0A72CFED65600B88D0D /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0A62CFED65600B88D0D /* TipCalculator.swift */; };
+		E479F0A92CFED95200B88D0D /* TipCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0A82CFED95200B88D0D /* TipCalculatorViewModel.swift */; };
+		E479F0AB2CFF8D8300B88D0D /* DexcomG7.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0AA2CFF8D8300B88D0D /* DexcomG7.swift */; };
+		E479F0B32CFFA83A00B88D0D /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0B22CFFA83A00B88D0D /* TipCalculatorTests.swift */; };
+		E479F0C02CFFAC1400B88D0D /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0BF2CFFAC1400B88D0D /* TipCalculatorUITests.swift */; };
+		E479F0C22CFFAC1400B88D0D /* TipCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479F0C12CFFAC1400B88D0D /* TipCalculatorUITestsLaunchTests.swift */; };
+		E4F1905E2CFFC29300DEBF2A /* TipCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F1905D2CFFC29300DEBF2A /* TipCalculatorViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E479F0B42CFFA83A00B88D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E479F08D2CFED63F00B88D0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E479F0942CFED63F00B88D0D;
+			remoteInfo = TipCalculator;
+		};
+		E479F0C32CFFAC1400B88D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E479F08D2CFED63F00B88D0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E479F0942CFED63F00B88D0D;
+			remoteInfo = TipCalculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E479F0952CFED63F00B88D0D /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E479F0982CFED63F00B88D0D /* TipCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorApp.swift; sourceTree = "<group>"; };
-		E479F09A2CFED63F00B88D0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E479F09A2CFED63F00B88D0D /* TipCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorView.swift; sourceTree = "<group>"; };
 		E479F09C2CFED64000B88D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E479F09F2CFED64000B88D0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E479F0A62CFED65600B88D0D /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
+		E479F0A82CFED95200B88D0D /* TipCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewModel.swift; sourceTree = "<group>"; };
+		E479F0AA2CFF8D8300B88D0D /* DexcomG7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexcomG7.swift; sourceTree = "<group>"; };
+		E479F0B02CFFA83A00B88D0D /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E479F0B22CFFA83A00B88D0D /* TipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorTests.swift; sourceTree = "<group>"; };
+		E479F0BD2CFFAC1400B88D0D /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E479F0BF2CFFAC1400B88D0D /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
+		E479F0C12CFFAC1400B88D0D /* TipCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4F1905D2CFFC29300DEBF2A /* TipCalculatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E479F0922CFED63F00B88D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E479F0AD2CFFA83A00B88D0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E479F0BA2CFFAC1400B88D0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				E479F0972CFED63F00B88D0D /* TipCalculator */,
+				E479F0B12CFFA83A00B88D0D /* TipCalculatorTests */,
+				E479F0BE2CFFAC1400B88D0D /* TipCalculatorUITests */,
 				E479F0962CFED63F00B88D0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				E479F0952CFED63F00B88D0D /* TipCalculator.app */,
+				E479F0B02CFFA83A00B88D0D /* TipCalculatorTests.xctest */,
+				E479F0BD2CFFAC1400B88D0D /* TipCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				E479F0982CFED63F00B88D0D /* TipCalculatorApp.swift */,
-				E479F09A2CFED63F00B88D0D /* ContentView.swift */,
+				E479F09A2CFED63F00B88D0D /* TipCalculatorView.swift */,
+				E479F0A82CFED95200B88D0D /* TipCalculatorViewModel.swift */,
+				E479F0A62CFED65600B88D0D /* TipCalculator.swift */,
+				E479F0AA2CFF8D8300B88D0D /* DexcomG7.swift */,
 				E479F09C2CFED64000B88D0D /* Assets.xcassets */,
 				E479F09E2CFED64000B88D0D /* Preview Content */,
 			);
@@ -65,6 +119,24 @@
 				E479F09F2CFED64000B88D0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E479F0B12CFFA83A00B88D0D /* TipCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E479F0B22CFFA83A00B88D0D /* TipCalculatorTests.swift */,
+				E4F1905D2CFFC29300DEBF2A /* TipCalculatorViewModelTests.swift */,
+			);
+			path = TipCalculatorTests;
+			sourceTree = "<group>";
+		};
+		E479F0BE2CFFAC1400B88D0D /* TipCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E479F0BF2CFFAC1400B88D0D /* TipCalculatorUITests.swift */,
+				E479F0C12CFFAC1400B88D0D /* TipCalculatorUITestsLaunchTests.swift */,
+			);
+			path = TipCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +159,42 @@
 			productReference = E479F0952CFED63F00B88D0D /* TipCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E479F0AF2CFFA83A00B88D0D /* TipCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E479F0B62CFFA83A00B88D0D /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */;
+			buildPhases = (
+				E479F0AC2CFFA83A00B88D0D /* Sources */,
+				E479F0AD2CFFA83A00B88D0D /* Frameworks */,
+				E479F0AE2CFFA83A00B88D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E479F0B52CFFA83A00B88D0D /* PBXTargetDependency */,
+			);
+			name = TipCalculatorTests;
+			productName = TipCalculatorTests;
+			productReference = E479F0B02CFFA83A00B88D0D /* TipCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E479F0BC2CFFAC1400B88D0D /* TipCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E479F0C52CFFAC1400B88D0D /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */;
+			buildPhases = (
+				E479F0B92CFFAC1400B88D0D /* Sources */,
+				E479F0BA2CFFAC1400B88D0D /* Frameworks */,
+				E479F0BB2CFFAC1400B88D0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E479F0C42CFFAC1400B88D0D /* PBXTargetDependency */,
+			);
+			name = TipCalculatorUITests;
+			productName = TipCalculatorUITests;
+			productReference = E479F0BD2CFFAC1400B88D0D /* TipCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +207,14 @@
 				TargetAttributes = {
 					E479F0942CFED63F00B88D0D = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					E479F0AF2CFFA83A00B88D0D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E479F0942CFED63F00B88D0D;
+					};
+					E479F0BC2CFFAC1400B88D0D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E479F0942CFED63F00B88D0D;
 					};
 				};
 			};
@@ -116,6 +232,8 @@
 			projectRoot = "";
 			targets = (
 				E479F0942CFED63F00B88D0D /* TipCalculator */,
+				E479F0AF2CFFA83A00B88D0D /* TipCalculatorTests */,
+				E479F0BC2CFFAC1400B88D0D /* TipCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +248,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E479F0AE2CFFA83A00B88D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E479F0BB2CFFAC1400B88D0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +269,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E479F09B2CFED63F00B88D0D /* ContentView.swift in Sources */,
+				E479F0AB2CFF8D8300B88D0D /* DexcomG7.swift in Sources */,
+				E479F0A72CFED65600B88D0D /* TipCalculator.swift in Sources */,
+				E479F09B2CFED63F00B88D0D /* TipCalculatorView.swift in Sources */,
+				E479F0A92CFED95200B88D0D /* TipCalculatorViewModel.swift in Sources */,
 				E479F0992CFED63F00B88D0D /* TipCalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E479F0AC2CFFA83A00B88D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F1905E2CFFC29300DEBF2A /* TipCalculatorViewModelTests.swift in Sources */,
+				E479F0B32CFFA83A00B88D0D /* TipCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E479F0B92CFFAC1400B88D0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E479F0C22CFFAC1400B88D0D /* TipCalculatorUITestsLaunchTests.swift in Sources */,
+				E479F0C02CFFAC1400B88D0D /* TipCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E479F0B52CFFA83A00B88D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E479F0942CFED63F00B88D0D /* TipCalculator */;
+			targetProxy = E479F0B42CFFA83A00B88D0D /* PBXContainerItemProxy */;
+		};
+		E479F0C42CFFAC1400B88D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E479F0942CFED63F00B88D0D /* TipCalculator */;
+			targetProxy = E479F0C32CFFAC1400B88D0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E479F0A12CFED64000B88D0D /* Debug */ = {
@@ -322,6 +488,76 @@
 			};
 			name = Release;
 		};
+		E479F0B72CFFA83A00B88D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VAVV2BSFXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sshih.TipCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TipCalculator";
+			};
+			name = Debug;
+		};
+		E479F0B82CFFA83A00B88D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VAVV2BSFXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sshih.TipCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TipCalculator";
+			};
+			name = Release;
+		};
+		E479F0C62CFFAC1400B88D0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VAVV2BSFXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sshih.TipCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TipCalculator;
+			};
+			name = Debug;
+		};
+		E479F0C72CFFAC1400B88D0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VAVV2BSFXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sshih.TipCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TipCalculator;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +575,24 @@
 			buildConfigurations = (
 				E479F0A42CFED64000B88D0D /* Debug */,
 				E479F0A52CFED64000B88D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E479F0B62CFFA83A00B88D0D /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E479F0B72CFFA83A00B88D0D /* Debug */,
+				E479F0B82CFFA83A00B88D0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E479F0C52CFFAC1400B88D0D /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E479F0C62CFFAC1400B88D0D /* Debug */,
+				E479F0C72CFFAC1400B88D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

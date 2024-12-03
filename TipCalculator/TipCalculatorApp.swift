@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TipCalculatorApp: App {
+    @StateObject var tipCalculatorVM = TipCalculatorViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TipCalculatorView(tipCalculatorViewModel: tipCalculatorVM)
         }
     }
 }
