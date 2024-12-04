@@ -8,13 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab = 0 // For TabView
-    @State private var selectedTime = "3 Hours" // For Segmented Control
+    @State private var selectedTab = 0
     
+    var body: some View {
+        // Tab Bar Section
+        TabView(selection: $selectedTab) {
+            GlucoseView()
+                .tabItem {
+                    Image(systemName: "circle.fill")
+                    Text("Glucose")
+                }
+                .tag(0)
+            Text("History")
+                .tabItem {
+                    Image(systemName: "doc.text")
+                    Text("History")
+                }
+                .tag(1)
+            Text("Connections")
+                .tabItem {
+                    Image(systemName: "link")
+                    Text("Connections")
+                }
+                .tag(2)
+            Text("Profile")
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+                .tag(3)
+        }
+        
+    }
+    
+}
+struct GlucoseView: View {
+    @State private var selectedTime = "3 Hours"
     var body: some View {
         ZStack {
             VStack {
-                // Top Section (Value in a Circle)
+                Spacer()
                 ZStack {
                     Circle()
                         .fill(Color.white)
@@ -32,7 +65,7 @@ struct ContentView: View {
                 }
                 .frame(width: 150, height: 150)
                 .padding(.top, 20)
-                
+                Spacer()
                 // Segmented Control
                 HStack {
                     ForEach(["3", "6", "12", "24"], id: \.self) { time in
@@ -75,6 +108,7 @@ struct ContentView: View {
                     .foregroundColor(.gray)
                     .padding(.horizontal)
                 }
+                .padding()
                 CardView {
                     VStack {
                         Text("Dynamic Content")
@@ -84,38 +118,7 @@ struct ContentView: View {
                             .foregroundColor(.gray)
                     }
                 }
-                .padding()
-                
-                // Spacer for Layout
-                Spacer()
-                
-                // Tab Bar Section
-                TabView(selection: $selectedTab) {
-                    Text("Glucose")
-                        .tabItem {
-                            Image(systemName: "circle.fill")
-                            Text("Glucose")
-                        }
-                        .tag(0)
-                    Text("History")
-                        .tabItem {
-                            Image(systemName: "doc.text")
-                            Text("History")
-                        }
-                        .tag(1)
-                    Text("Connections")
-                        .tabItem {
-                            Image(systemName: "link")
-                            Text("Connections")
-                        }
-                        .tag(2)
-                    Text("Profile")
-                        .tabItem {
-                            Image(systemName: "person")
-                            Text("Profile")
-                        }
-                        .tag(3)
-                }
+                .padding(.bottom, 60)
                 
             }
             VStack {
@@ -136,12 +139,10 @@ struct ContentView: View {
                     .padding(.bottom, 20)
                 }
                 Spacer()
-                    
             }
         }
     }
 }
-
 struct CardView<Content: View>: View {
     var content: () -> Content
     
