@@ -41,36 +41,6 @@ struct TipCalculatorView: View {
                             .onTapGesture {
                                 showPayments = true
                             }
-                        
-                    }
-                    .sheet(isPresented: $showPayments) {
-                        NavigationStack {
-                            List(tipCalculatorViewModel.payments) { payment in
-                                NavigationLink(value: payment) {
-                                    Text(payment.methodName)
-                                }
-                            }
-                            .navigationDestination(for: Payment.self) { payment in
-                                VStack {
-                                    Rectangle()
-                                        .fill(.gray)
-                                        .frame(maxWidth: 250, maxHeight: 250)
-                                        .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 5)
-                                        .overlay {
-                                            if let imagePath = payment.imagePath {
-                                                // TODO: Fetch image from file system through ViewModel
-                                            } else {
-                                                Text("QR Code Placeholder")
-                                                    .font(.system(size: 20))
-                                            }
-                                        }
-                                        .padding()
-                                    Text(payment.paymentId)
-                                        .font(.system(size: 25))
-                                        .padding()
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -94,6 +64,35 @@ struct TipCalculatorView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.bottom, 50)
+            }
+        }
+        .sheet(isPresented: $showPayments) {
+            NavigationStack {
+                List(tipCalculatorViewModel.payments) { payment in
+                    NavigationLink(value: payment) {
+                        Text(payment.methodName)
+                    }
+                }
+                .navigationDestination(for: Payment.self) { payment in
+                    VStack {
+                        Rectangle()
+                            .fill(.gray)
+                            .frame(maxWidth: 250, maxHeight: 250)
+                            .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 5)
+                            .overlay {
+                                if let imagePath = payment.imagePath {
+                                    // TODO: Fetch image from file system through ViewModel
+                                } else {
+                                    Text("QR Code Placeholder")
+                                        .font(.system(size: 20))
+                                }
+                            }
+                            .padding()
+                        Text(payment.paymentId)
+                            .font(.system(size: 25))
+                            .padding()
+                    }
+                }
             }
         }
     }
